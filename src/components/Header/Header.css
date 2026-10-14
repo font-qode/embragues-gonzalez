@@ -1,0 +1,124 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75px;
+    background-color: black;
+    padding: 0 20px;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-button {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+
+  &:hover {
+    color: #F2531B;
+  }
+}
+
+.logo-container {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.sections-navbar {
+    display: flex;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    transition: 0.5s;
+    border-bottom: 2px solid black;
+
+    &:hover {
+        color: #F2531B;
+        transform: scale(1.03);
+        border-bottom: 2px solid #F2531B;
+    }
+}
+
+.sections-navbar-contact {
+    display: flex;
+    text-decoration: none;
+    margin-right: 35px;
+    color: #F2531B;
+    transition: 0.5s;
+    border-bottom: 2px solid black;
+
+    &:hover {
+        color: #F2531B;
+        transform: scale(1.03);
+        border-bottom: 2px solid #F2531B;
+    }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 20px 5%;
+  }
+
+  .menu-button {
+    display: block;
+    position: relative;
+    z-index: 1200;
+  }
+
+  .sections-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+
+    width: 250px;
+    height: 100dvh;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 40px 20px;
+    margin: 0;
+    list-style: none;
+
+    background-color: black;
+
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.4s ease, visibility 0s 0.4s;
+    z-index: 1100;
+  }
+
+  .sections-container.open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.4s ease;
+  }
+}

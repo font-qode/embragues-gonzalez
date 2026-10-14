@@ -1,0 +1,233 @@
+.parts-container {
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    padding: 20px 20px 20px 40px;
+}
+
+.subtitle-container {
+    font-size: 40px;
+    padding-top: 75px;
+}
+
+.subtitles {
+    margin: 0;
+}
+
+.parts-description {
+    max-width: 500px;
+}
+
+.parts-description-text {
+    font-size: 24px;
+}
+
+.parts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.part-card {
+    width: 375px;
+    margin: 40px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 6px #ffffff51;
+    transition: 0.5s;
+}
+
+.part-card:hover {
+    box-shadow: 0 0 6px #ffffff99;
+    transform: scaleX(1.01);
+}
+
+.part-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.part-image {
+    height: 180px;
+}
+
+.part-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.part-title {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.part-description {
+    margin-bottom: 20px;
+}
+
+.part-button {
+    padding: 8px;
+    border-radius: 3px;
+    background-color: #F2531B;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+/* Ocultamos las flechas en computadoras */
+.parts-controls {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+    .subtitles {
+        font-size: 48px;
+    }   
+
+    .part-title {
+        font-size: 20px;
+    }
+
+    .parts-description-text {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .part-description {
+        font-size: 14px;
+    }
+
+    .part-button {
+        font-size: 16px;
+    }
+
+  .parts-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .parts-list .part-card {
+    grid-area: 1 / 1;
+    width: 100%;
+    min-width: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.35s ease;
+  }
+
+.parts-list .part-card.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+  .parts-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .parts-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #FD1F01;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .parts-counter {
+    color: white;
+    font-size: 14px;
+  }
+
+  .parts-list {
+    width: 100%;
+    min-width: 0;
+}
+
+.parts-list .part-card {
+    grid-area: 1 / 1;
+
+    width: calc(80% - 80px);
+    max-width: 100%;
+    min-width: 0;
+    margin: 30px auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.35s ease;
+}
+
+.parts-container {
+    padding: 20px;
+}
+}
+
+@media (max-width: 480px) {
+
+    .subtitles {
+        font-size: 30px;
+    }  
+
+    .parts-description-text {
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    .part-description {
+        font-size: 12px;
+    }
+
+    .part-title {
+        font-size: 18px;
+    }
+
+    .part-button {
+        font-size: 14px;
+    }
+
+    .parts-list .part-card {
+    grid-area: 1 / 1;
+
+    width: calc(100% - 40px);
+    max-width: 100%;
+    min-width: 0;
+    margin: 30px auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.35s ease;
+}
+}

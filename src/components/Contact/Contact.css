@@ -1,0 +1,128 @@
+.contact-card {
+    width: 375px;
+    margin: 40px;
+    height: 300px;
+    padding: 30px;
+    transition: 0.5s;
+    box-shadow: 2px -2px 2px #252525;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 2px 2px #252525;
+    transform: scaleX(1.01);
+}
+
+.card-title-contact {
+    font-size: 20px;
+}
+
+.span-line-contact {
+    color: #F2531B;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F2531B;
+    transition: 0.5s;
+    border-right: 1px solid black;
+
+    &:hover {
+        color: #F2531B;
+        cursor: pointer;
+        border-right: 1px solid #F2531B;
+        transform: scaleX(1.01);
+    }
+}
+
+.contact-button-container {
+    display: flex;
+}
+
+.contact-button {
+    display: flex;
+    padding: 8px 40px;
+    border-radius: 3px;
+    background-color: #F2531B;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.social-media a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-map-container {
+    margin: 0 20px;
+}
+
+.diasyhorarios-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .contact-button {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-button {
+        padding: 10px 16px;
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .contact-card {
+    width: 275px;
+    margin: 20px;
+    height: 300px;
+    padding: 20px;
+    transition: 0.5s;
+    box-shadow: 2px -2px 2px #252525;
+}
+
+.card-title-contact {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-text {
+    font-size: 14px;
+}
+
+.social-media a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contact-map-container {
+    margin: 0 10px;
+}
+}
