@@ -26,7 +26,7 @@ function Process() {
           </div>
           <div className="process-info-container">
             <div>
-              <h4> CONTANOS QUE NECESITAS</h4>
+              <h4 className="process-card-title"> CONTANOS QUE NECESITAS</h4>
             </div>
             <div>
               <p className="info-process"> Escribinos indicando tu consulta. </p>
@@ -42,7 +42,7 @@ function Process() {
           </div>
           <div className="process-info-container">
             <div>
-              <h4> PASANOS LOS DATOS</h4>
+              <h4 className="process-card-title"> PASANOS LOS DATOS</h4>
             </div>
             <div>
               <p className="info-process"> Marca, modelo, año... </p>
@@ -58,7 +58,7 @@ function Process() {
           </div>
           <div className="process-info-container">
             <div>
-              <h4> RECIBÍ TU PRESUPUESTO</h4>
+              <h4 className="process-card-title"> RECIBÍ TU PRESUPUESTO</h4>
             </div>
             <div>
               <p className="info-process"> Te asesoramos y cotizamos. </p>
@@ -69,7 +69,7 @@ function Process() {
       </div>
 
       <div className="process-button-container">
-        <a className="process-button" target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre."> Contanos tu consulta → </a>
+        <a className="process-button" target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre."> Contanos tu consulta </a>
       </div>
     </div>
   );

@@ -32,6 +32,10 @@
     display: flex;
 }
 
+.process-card-title {
+    font-size: 20px;
+}
+
 .process-button {
     display: flex;
     padding: 8px 40px;

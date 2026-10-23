@@ -32,7 +32,7 @@
 .part-card {
     width: 375px;
     margin: 40px;
-    height: 450px;
+    height: auto;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 6px #ffffff51;

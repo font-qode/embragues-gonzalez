@@ -1,7 +1,7 @@
 .Hero-container {
     display: flex;
     background-color: black;
-    color: aliceblue;
+    color: white;
     min-height: 100vh;
     min-height: 100dvh;
     border-bottom: 1px solid #F2531B;
@@ -37,6 +37,8 @@
 
 .hero-span-subtitulo {
     color: #F2531B;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
 }
 
 .Hero-titulo {
@@ -54,10 +56,15 @@
     font-size: 14px;
     transition: 0.5s;
     cursor: pointer;
+    margin-top: 20px;
 
     &:hover {
         transform: scale(1.03);
     }
+}
+
+.Hero-button-container {
+    margin-top: 10px;
 }
 
 .Hero-ver-productos-container {
@@ -99,6 +106,7 @@
 @media (max-width: 768px) {
     .hero-parrafo-subtitulo {
         font-size: 16px;
+        margin-right: 20px;
     }
 
     .Hero-subtitulo {

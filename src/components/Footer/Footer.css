@@ -17,28 +17,14 @@
 
 .footer-logo-container {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: 250px;
 }
 
 .footer-name-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.embragues-span-footer {
-    font-size: 60px;
-    font-weight: 900;
-    display: flex;
-    margin-bottom: -15px;
-}
-
-.gonzalez-span-footer {
-    font-size: 68px;
-    font-weight: 900;
-    display: flex;
-    margin-top: -10px;
 }
 
 .footer-derechos-container {
@@ -59,20 +45,6 @@
     height: 90px;
 }
 
-.embragues-span-footer {
-    font-size: 40px;
-    font-weight: 900;
-    display: flex;
-    margin-bottom: -15px;
-}
-
-.gonzalez-span-footer {
-    font-size: 46px;
-    font-weight: 900;
-    display: flex;
-    margin-top: 0;
-}
-
 .footer-derechos-container {
     display: flex;
     flex-direction: column;
@@ -90,20 +62,6 @@
     .footer-logo-container {
     width: 65px;
     height: 65px;
-}
-
-.embragues-span-footer {
-    font-size: 30px;
-    font-weight: 900;
-    display: flex;
-    margin-bottom: -15px;
-}
-
-.gonzalez-span-footer {
-    font-size: 34px;
-    font-weight: 900;
-    display: flex;
-    margin-top: 5px;
 }
 
 .footer-derechos-container {
