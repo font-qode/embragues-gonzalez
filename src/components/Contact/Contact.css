@@ -1,15 +1,18 @@
 .contact-card {
-    width: 375px;
-    margin: 40px;
-    height: 300px;
+    width: 100%;
+    min-width: 400px;
+    min-height: 300px;
+    height: auto;
+    margin: 0;
     padding: 30px;
-    transition: 0.5s;
     box-shadow: 2px -2px 2px #252525;
+    transition: 0.3s ease;
+    margin: 40px 0;
 }
 
 .contact-card:hover {
-    box-shadow: 0 0 2px 2px #252525;
-    transform: scaleX(1.01);
+    box-shadow: 0 0 4px #F2531B;
+    transform: translateY(-4px);
 }
 
 .card-title-contact {

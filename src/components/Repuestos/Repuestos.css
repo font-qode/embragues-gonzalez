@@ -19,7 +19,8 @@
 }
 
 .parts-description-text {
-    font-size: 24px;
+    font-size: 18px;
+    color: #a5a5a5;
 }
 
 .parts-list {
@@ -214,6 +215,11 @@
 
     .part-button {
         font-size: 14px;
+    }
+
+    .part-image {
+        width: auto;
+        height: auto;
     }
 
     .parts-list .part-card {

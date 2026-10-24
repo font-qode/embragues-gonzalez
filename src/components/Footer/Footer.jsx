@@ -8,7 +8,7 @@ function Footer() {
             <motion.div initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
             <div className='footer-name-logo-container'>
                 <div className='footer-logo-container'> 
-                    <img src="/logoCompleto.png" alt="logo Embragues Gonzalez" />
+                    <img className='img-logo-footer' src="/logoCompleto.png" alt="logo Embragues Gonzalez" />
                 </div>
             </div>
             </motion.div>

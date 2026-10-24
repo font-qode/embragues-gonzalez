@@ -1,190 +1,245 @@
+
 .about-container {
-    background-color: black;
-    min-height: 100vh;
-    color: white;
-    padding: 20px;
+  background: black;
+  color: #fff;
+  overflow: hidden;
+  padding: 20px 40px;
 }
+
+.about-heading {
+  max-width: 850px;
+  margin-bottom: 80px;
+}
+
+.about-eyebrow,
+.about-small-title {
+  display: block;
+  color: #F2531B;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.about-title {
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(36px, 5vw, 70px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  margin: 0 0 25px;
+}
+
+.about-title span {
+  color: #F2531B;
+  font: inherit;
+}
+
+.about-intro {
+  color: #a5a5a5;
+  font-size: clamp(15px, 1.5vw, 19px);
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+/* HISTORIA + VIDEO */
 
 .info-video-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 100px;
 }
 
 .info-about-container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    font-size: 20px;
-    padding-right: 10px;
+  min-width: 0;
 }
 
-.video-about-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-
-   .services-button {
-    font-size: 16px;
-   }
-}
-
-.video-about-container video {
-    display: block;
-    width: 70%;
-    height: auto;
-}
-
-.about-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.about-card {
-    width: 350px;
-    margin: 20px;
-    height: 175px;
-    padding: 30px;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 0 0 6px #ffffff51;
-    transition: 0.5s;
-}
-
-.about-card:hover {
-    box-shadow: 0 0 6px #ffffff99;
-
-    .about-card-texto {
-        color: #F2531B;
-    }
-
-    .about-card-icono {
-        color: #F2531B;
-    }
-}
-
-.about-card-icono {
-    padding-bottom: 15px;
-    font-size: 40px;
-    color: #ffffff99;
-    transition: 0.5s;
-}
-
-.about-card-texto {
-    color: #ffffff99;
-    transition: 0.5s;
-}
-
- @media (max-width: 768px) {
-   .info-video-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.about-card-icono {
-    padding-bottom: 12px;
-    font-size: 30px;
-}
-
-.about-card-texto {
-    font-size: 16px;
-}
-
-.info-about-container {
-    width: 100%;
-}
-
-.about-text {
-    font-size: 16px;
-    display: flex;
-    width: 100%;
+.about-secondary-title {
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  max-width: 500px;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.about-card {
-    width: 150px;
-    margin: 10px;
-    height: 150px;
-    padding: 20px;
-}
-
-.about-card-container {
-    margin-bottom: 30px;
-}
-
-.video-about-container {
-    width: 60%;
-    overflow: hidden;
-    border-radius: 0;
-    justify-content: center;
-    align-items: center;
-
-   .services-button {
-    font-size: 16px;
-   }
-}
-
-.video-about-container video {
-    display: block;
-    width: 70%;
-    height: auto;
-}
-}
-
-
-
- @media (max-width: 480px) {
-
-.about-card-icono {
-    padding-bottom: 10px;
-    font-size: 30px;
-    padding: 0;
-}
-
-.about-card-texto {
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about-text {
-    font-size: 12px;
+  color: #a5a5a5;
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* VIDEO */
+
+.video-about-container {
+  min-width: 0;
+}
+
+.about-video-frame {
+  background: #161616;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.about-video-frame video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  background: #000;
+  object-fit: contain;
+}
+
+.about-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 22px;
+  color: #F2531B;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.about-video-link:hover {
+  gap: 23px;
+}
+
+/* CARACTERÍSTICAS */
+
+.about-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
 }
 
 .about-card {
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-    margin: 5px;
-    height: 120px;
-    padding: 5px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 210px;
+  padding: 28px;
+  background: #121212;
+  border: 1px solid #2a2a2a;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
 
-.about-card-container {
-    margin-bottom: 30px;
+.about-card:hover {
+  background: #181818;
+  border-color: #F2531B;
 }
 
-.video-about-container {
-    width: 80%;
+.about-card-number {
+  color: #F2531B;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-   .services-button {
+.about-card-icono {
+  color: #777;
+  font-size: 35px;
+  transition: color 0.3s ease;
+}
+
+.about-card:hover .about-card-icono {
+  color: #F2531B;
+}
+
+.about-card-texto {
+  color: #f0f0f0;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .info-video-container {
+    gap: 35px;
+  }
+
+  .about-card-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-card {
+    min-height: 170px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 75px 20px;
+  }
+
+  .about-heading {
+    margin-bottom: 50px;
+  }
+
+  .about-title {
+    letter-spacing: -0.5px;
+  }
+
+  .info-video-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-bottom: 65px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-video-frame {
+    padding: 6px;
+  }
+
+  .about-card {
+    padding: 20px;
+    min-height: 155px;
+  }
+
+  .about-card-icono {
+    font-size: 30px;
+  }
+
+  .about-card-texto {
     font-size: 14px;
-   }
+  }
 }
 
-.video-about-container video {
-    width: 80%;
-}
-}
+@media (max-width: 480px) {
+  .about-card-container {
+    gap: 10px;
+  }
 
+  .about-card {
+    min-height: 145px;
+    padding: 15px;
+  }
+
+  .about-card-texto {
+    font-size: 13px;
+  }
+}

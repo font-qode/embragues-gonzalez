@@ -34,7 +34,7 @@ function Hero() {
                 </div>
                 <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }} viewport={{ once: true }}>
                 <div className="Hero-ver-productos-container">
-                    <span> REPUESTOS Y SERVICOS </span>
+                    <span> Más información </span>
                     <span className='end-arrow'> ↓ </span>
                 </div>
                 </motion.div>
