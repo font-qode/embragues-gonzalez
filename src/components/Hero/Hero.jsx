@@ -26,11 +26,11 @@ function Hero() {
                         <p className='hero-parrafo-subtitulo'> Brindamos soluciones integrales en embragues y transmisiones para maquinaria agrícola, maquinaria pesada, transporte, vehículos familiares y de competición, combinando experiencia, innovación y un profundo conocimiento técnico. </p>
                     </div>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }} viewport={{ once: true }}>
                     <div className="Hero-button-container">
+                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }} viewport={{ once: true }}>
                         <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20solicitar%20un%20presupuesto." className="Hero-button"> SOLICITAR PRESUPUESTO </a>
-                    </div>
                     </motion.div>
+                    </div>
                 </div>
                 <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }} viewport={{ once: true }}>
                 <div className="Hero-ver-productos-container">

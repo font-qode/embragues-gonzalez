@@ -41,12 +41,12 @@ function About() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-
-        <h2 className="about-title">
-          Más de medio siglo
-          <span> de experiencia.</span>
-        </h2>
-
+        <div className="subtitle-container">
+          <h2 className="about-title">
+            Más de medio siglo
+            <span> de experiencia.</span>
+          </h2>
+        </div>
         <p className="about-intro">
           <span className="hero-span-subtitulo">|</span> Una historia de pasión, trabajo y compromiso
           que continúa de generación en generación.
@@ -147,6 +147,75 @@ function About() {
           </motion.div>
         ))}
       </div>
+
+
+
+{/* MISIÓN Y VISIÓN */}
+
+<div className="about-values-container">
+
+  <motion.div
+    className="about-values-heading"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    viewport={{ once: true }}
+  >
+    <span className="about-small-title">
+      NUESTROS VALORES
+    </span>
+
+    <h3 className="about-secondary-title">
+      Nuestro presente.
+      <span className="about-values-accent"> Nuestro futuro.</span>
+    </h3>
+  </motion.div>
+
+  <div className="about-values-grid">
+
+    <motion.article
+      className="about-value-card"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+    >
+      <span className="about-value-number">
+        01 / PROPÓSITO
+      </span>
+
+      <h4>Nuestra misión</h4>
+
+      <p>
+        Brindar soluciones integrales en embragues y transmisiones para maquinaria agrícola, maquinaria pesada, transporte, vehículos familiares y de competición, combinando experiencia, innovación y un profundo conocimiento técnico.
+
+Trabajamos con rapidez, eficiencia y compromiso para ofrecer productos y servicios confiables, desarrollando soluciones personalizadas que respondan a las necesidades reales de cada cliente y construyendo relaciones basadas en la confianza y el trato familiar.
+      </p>
+    </motion.article>
+
+    <motion.article
+      className="about-value-card"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.15 }}
+      viewport={{ once: true }}
+    >
+      <span className="about-value-number">
+        02 / PROYECCIÓN
+      </span>
+
+      <h4>Nuestra visión</h4>
+
+      <p>
+        Ser la empresa referente en Argentina en soluciones de embragues y transmisiones, reconocida por la excelencia de nuestro trabajo, la capacidad de resolver desafíos técnicos complejos y la cercanía con nuestros clientes.
+
+Aspiramos a crecer manteniendo nuestros valores familiares, liderando la innovación en el sector y consolidándonos como el socio de confianza elegido por quienes buscan calidad, experiencia y resultados comprobados.
+      </p>
+    </motion.article>
+
+  </div>
+</div>
+
 
     </section>
   );

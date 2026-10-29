@@ -21,6 +21,9 @@ function Header() {
                     <a href="#inicio" className="nav-link-sections">Inicio</a>
                 </li>
                 <li className="sections-navbar">
+                    <a href="#embragues" className="nav-link-sections">Embragues</a>
+                </li>
+                <li className="sections-navbar">
                     <a href="#repuestos" className="nav-link-sections">Repuestos</a>
                 </li>
                 <li className="sections-navbar">

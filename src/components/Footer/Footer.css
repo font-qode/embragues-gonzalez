@@ -40,6 +40,11 @@
 }
 
 @media (max-width: 765px) {
+
+    .footer {
+    min-height: 500px;
+}
+
     .footer-logo-container {
     width: auto;
     height: auto;
@@ -59,6 +64,10 @@
 }
 
 @media (max-width: 480px) {
+
+    .footer {
+        min-height: 350px;
+    }   
     
     .footer-name-logo-container {
         width: 100%;

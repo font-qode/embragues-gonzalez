@@ -6,7 +6,7 @@ import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 function Repuestos() {
   const [productoActual, setProductoActual] = useState(0);
 
-  const totalProductos = 6;
+  const totalProductos = 7;
 
   const siguienteProducto = () => {
     setProductoActual((anterior) => (anterior + 1) % totalProductos);
@@ -38,8 +38,7 @@ function Repuestos() {
         <div className="parts-description">
           <h3 className="parts-description-text">
             <span className="hero-span-subtitulo">|</span> Contamos con una alta
-            variedad de repuestos y accesorios para mantener el rendimiento y
-            durabilidad del sistema de embrague.
+            variedad de repuestos y accesorios.
           </h3>
         </div>
       </motion.div>
@@ -58,12 +57,6 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Bombas de agua</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
@@ -83,12 +76,6 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Crapodinas hidráulicas</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
@@ -108,12 +95,6 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Corona de arranque</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
@@ -133,17 +114,11 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Bomba y bombín hidráulico</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20bomba%20y%20bombín%20de%20agua."
+              href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20bomba%20y%20bombín%20hidráulico."
             >
               {" "}
               Consultar
@@ -158,12 +133,6 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Kit de distribución</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
@@ -183,17 +152,30 @@ function Repuestos() {
 
           <div className="part-info">
             <h4 className="part-title">Rulemanes</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
-
             <a
               className="part-button"
               target="_blank"
               rel="noopener noreferrer"
               href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20rulemanes."
+            >
+              {" "}
+              Consultar
+            </a>
+          </div>
+        </div>
+
+        <div className={`part-card ${productoActual === 6 ? "active" : ""}`}>
+          <div className="part-image-container">
+            <img className="part-image" src="/crapodina.png" alt="crapodina" />
+          </div>
+
+          <div className="part-info">
+            <h4 className="part-title">Crapodina</h4>
+            <a
+              className="part-button"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%crapodinas."
             >
               {" "}
               Consultar
