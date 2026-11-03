@@ -52,7 +52,10 @@ function Repuestos() {
         viewport={{ once: true }}
         className="parts-list"
       >
-        <div className={`part-card ${productoActual === 0 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(0 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/bombadeagua.png" alt="bomba de agua" />
           </div>
@@ -71,7 +74,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 1 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(1 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/crapodinahidraulica.png" alt="crapodina hidráulica" />
           </div>
@@ -90,7 +96,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 2 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(2 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/coronaarranque.png" alt="crapodina hidráulica" />
           </div>
@@ -109,7 +118,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 3 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(3 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/bombabombinhidraulico.png" alt="crapodina hidráulica" />
           </div>
@@ -128,7 +140,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 4 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(4 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/kitdistribucion.png" alt="crapodina hidráulica" />
           </div>
@@ -147,7 +162,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 5 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(5 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/rulemanes.png" alt="crapodina hidráulica" />
           </div>
@@ -166,7 +184,10 @@ function Repuestos() {
           </div>
         </div>
 
-        <div className={`part-card ${productoActual === 6 ? "active" : ""}`}>
+        <div
+          className="part-card"
+          data-position={(6 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/crapodina.png" alt="crapodina" />
           </div>

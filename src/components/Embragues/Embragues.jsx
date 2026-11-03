@@ -50,7 +50,10 @@ function Embragues() {
         viewport={{ once: true }}
         className="parts-list"
       >
-        <div className={`embrague-card ${productoActual === 0 ? "active" : ""}`}>
+        <div
+          className="embrague-card"
+          data-position={(0 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/tractor.png" alt="bomba de agua" />
           </div>
@@ -70,7 +73,10 @@ function Embragues() {
           </div>
         </div>
 
-        <div className={`embrague-card ${productoActual === 1 ? "active" : ""}`}>
+        <div
+          className="embrague-card"
+          data-position={(1 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/competicion.png" alt="crapodina hidráulica" />
           </div>
@@ -90,7 +96,10 @@ function Embragues() {
           </div>
         </div>
 
-        <div className={`embrague-card ${productoActual === 2 ? "active" : ""}`}>
+        <div
+          className="embrague-card"
+          data-position={(2 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/automotriz.png" alt="crapodina hidráulica" />
           </div>
@@ -110,7 +119,10 @@ function Embragues() {
           </div>
         </div>
 
-        <div className={`embrague-card ${productoActual === 3 ? "active" : ""}`}>
+        <div
+          className="embrague-card"
+          data-position={(3 - productoActual + totalProductos) % totalProductos}
+        >
           <div className="part-image-container">
             <img className="part-image" src="/vial.png" alt="crapodina hidráulica" />
           </div>

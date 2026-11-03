@@ -104,7 +104,7 @@
 .about-video-link {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin-top: 22px;
   color: #F2531B;
   font-size: 14px;
@@ -114,7 +114,7 @@
 }
 
 .about-video-link:hover {
-  gap: 23px;
+  gap: 11px;
 }
 
 /* CARACTERÍSTICAS */
@@ -126,47 +126,36 @@
 }
 
 .about-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  min-height: 210px;
-  padding: 28px;
-  background: #121212;
-  border: 1px solid #2a2a2a;
-  transition:
-    border-color 0.3s ease,
-    background 0.3s ease;
-}
-
-.about-card:hover {
-  background: #181818;
-  border-color: #F2531B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 170px;
+    padding: 25px;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
 }
 
 .about-card-number {
-  color: #F2531B;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.about-card-icono {
-  color: #777;
-  font-size: 35px;
-  transition: color 0.3s ease;
-}
-
-.about-card:hover .about-card-icono {
-  color: #F2531B;
+    color: #F2531B;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .about-card-texto {
-  color: #f0f0f0;
-  font-family: "Archivo", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.about-card-texto::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #F2531B;
+    margin-bottom: 15px;
 }
 /* MISIÓN Y VISIÓN */
 
@@ -229,7 +218,6 @@
     margin: 0;
 }
 
-/* TABLET */
 
 @media (max-width: 1024px) {
   .info-video-container {
@@ -278,9 +266,6 @@
     min-height: 155px;
   }
 
-  .about-card-icono {
-    font-size: 30px;
-  }
 
   .about-card-texto {
     font-size: 14px;
@@ -310,15 +295,19 @@
   .about-card-container {
     gap: 10px;
   }
-
+  
   .about-card {
-    min-height: 145px;
-    padding: 15px;
-  }
+        min-height: 145px;
+        padding: 18px;
+    }
 
-  .about-card-texto {
-    font-size: 13px;
-  }
+    .about-card-number {
+        font-size: 12px;
+    }
+
+    .about-card-texto {
+        font-size: 13px;
+    }
 
   .about-values-container {
         margin-top: 60px;

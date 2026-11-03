@@ -2,30 +2,18 @@
 import historiaRaul from "../../assets/video/historiaraul.mp4";
 import "./About.css";
 import { motion } from "motion/react";
-import {
-  HiOutlineUserCircle
-} from "react-icons/hi2";
-import {
-  GiMagnifyingGlass,
-  GiHexagonalNut,
-  GiStarMedal
-} from "react-icons/gi";
 
 const caracteristicas = [
   {
-    icono: <GiHexagonalNut />,
     texto: "Repuestos de calidad"
   },
   {
-    icono: <GiMagnifyingGlass />,
     texto: "Diagnóstico profesional"
   },
   {
-    icono: <GiStarMedal />,
     texto: "Más de 50 años de experiencia"
   },
   {
-    icono: <HiOutlineUserCircle />,
     texto: "Atención personalizada"
   }
 ];
@@ -136,10 +124,6 @@ function About() {
             <span className="about-card-number">
               0{index + 1}
             </span>
-
-            <div className="about-card-icono">
-              {item.icono}
-            </div>
 
             <span className="about-card-texto">
               {item.texto}

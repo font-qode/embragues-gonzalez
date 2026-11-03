@@ -102,6 +102,23 @@
     padding: 0 20px;
     width: 100%;
     gap: 10px;
+    animation: hero-info-float 2.4s ease-in-out infinite;
+}
+
+@keyframes hero-info-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .Hero-ver-productos-container {
+        animation: none;
+    }
 }
 
 .whatsapp-container {
@@ -113,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #25D366;
+    background-color: #F2531B;
     color: white;
     border-radius: 50%;
     font-size: 30px;

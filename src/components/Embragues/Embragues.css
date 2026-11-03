@@ -30,10 +30,14 @@
 }
 
 .parts-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    padding: 30px 10px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 .embrague-card {
@@ -54,6 +58,15 @@
 
 .embrague-card .part-info {
     flex: 1;
+}
+
+.embrague-card .part-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 2.5em;
+    text-align: center;
 }
 
 .embrague-card .part-button {
@@ -113,57 +126,27 @@
     }
 }
 
-/* Ocultamos las flechas en computadoras */
-.parts-controls {
-  display: none;
-}
-
-@media (max-width: 768px) {
-
-    .subtitles {
-        font-size: 48px;
-    }   
-
-    .part-title {
-        font-size: 20px;
-    }
-
-    .parts-description-text {
-        font-size: 20px;
-        margin-right: 20px;
-    }
-
-    .part-description {
-        font-size: 14px;
-    }
-
-    .part-button {
-        font-size: 16px;
-    }
-
-  .parts-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .parts-list .embrague-card{
-    grid-area: 1 / 1;
+.parts-list .embrague-card {
+    display: none;
     width: 100%;
     min-width: 0;
+    margin: 0;
+    flex-direction: column;
+}
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.parts-list .embrague-card[data-position="0"] {
+    display: flex;
+    order: 0;
+}
 
-    transition: opacity 0.35s ease;
-  }
+.parts-list .embrague-card[data-position="1"] {
+    display: flex;
+    order: 1;
+}
 
-.parts-list .embrague-card.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+.parts-list .embrague-card[data-position="2"] {
+    display: flex;
+    order: 2;
 }
 
   .parts-controls {
@@ -196,25 +179,28 @@
     font-size: 14px;
   }
 
-  .parts-list {
-    width: 100%;
-    min-width: 0;
-}
+@media (max-width: 768px) {
 
-.parts-list .embrague-card {
-    grid-area: 1 / 1;
+    .subtitles {
+        font-size: 48px;
+    }
 
-    width: calc(80% - 80px);
-    max-width: 100%;
-    min-width: 0;
-    margin: 30px auto;
+    .part-title {
+        font-size: 20px;
+    }
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    .parts-description-text {
+        font-size: 20px;
+        margin-right: 20px;
+    }
 
-    transition: opacity 0.35s ease;
-}
+    .part-description {
+        font-size: 14px;
+    }
+
+    .part-button {
+        font-size: 16px;
+    }
 
 .parts-container {
     padding: 20px;
@@ -225,7 +211,7 @@
 
     .subtitles {
         font-size: 30px;
-    }  
+    }
 
     .parts-description-text {
         font-size: 16px;
@@ -244,20 +230,26 @@
         font-size: 14px;
     }
 
-    .parts-list .embrague-card{
-    grid-area: 1 / 1;
-
-    width: calc(100% - 40px);
-    max-width: 100%;
-    min-width: 0;
-    margin: 30px auto;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transition: opacity 0.35s ease;
-}
 }
 
+@media (max-width: 1024px) {
+    .parts-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
+    .parts-list .embrague-card[data-position="2"] {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .parts-list {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 395px;
+        margin-inline: auto;
+    }
+
+    .parts-list .embrague-card[data-position="1"] {
+        display: none;
+    }
+}

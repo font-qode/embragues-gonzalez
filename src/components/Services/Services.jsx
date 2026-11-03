@@ -32,7 +32,6 @@ function Services() {
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues para tractores y maquinaria agrícola </h4>
                         <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
-                        <a className='services-button' target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20embragues%20para%20tractores%20y%20maquinarias%20agrícolas."> Conocer mas → </a>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -42,7 +41,6 @@ function Services() {
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues de competición </h4>
                         <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
-                        <a className='services-button' target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20embragues%20de%20competición."> Conocer mas → </a>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -52,7 +50,6 @@ function Services() {
                     <div className='services-info'>
                         <h4 className='services-title'> Reparación de embragues automotrices </h4>
                         <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
-                        <a className='services-button' target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20reparación%20de%20embragues%20automotrices."> Conocer mas → </a>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -62,7 +59,6 @@ function Services() {
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues para máquinas viales </h4>
                         <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
-                        <a className='services-button' target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20embragues%20para%20maquinas%20viales."> Conocer mas → </a>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -72,7 +68,6 @@ function Services() {
                     <div className='services-info'>
                         <h4 className='services-title'> Sistemas y embragues en baño de aceite </h4>
                         <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
-                        <a className='services-button' target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20sistemas%20y%20embragues%20en%20baños%20de%20aceite."> Conocer mas → </a>
                     </div>
                 </div>
             </motion.div>
