@@ -56,12 +56,7 @@ function Embragues() {
           </div>
 
           <div className="part-info">
-            <h4 className="part-title">Embragues para tractores y maquinaria agrícola</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
+            <h4 className="part-title">Tractores y maquinarias agrícolas</h4>
 
             <a
               className="part-button"
@@ -81,18 +76,13 @@ function Embragues() {
           </div>
 
           <div className="part-info">
-            <h4 className="part-title">Embragues de competición</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
+            <h4 className="part-title">Competición</h4>
 
             <a
               className="part-button"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20embragues%20de%20competición.."
+              href="https://wa.me/5493456256499?text=Hola,%20quisiera%20saber%20mas%20sobre%20embragues%20de%20competición."
             >
               {" "}
               Consultar
@@ -106,12 +96,7 @@ function Embragues() {
           </div>
 
           <div className="part-info">
-            <h4 className="part-title">Embragues automotrices</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
+            <h4 className="part-title">Automotrices</h4>
 
             <a
               className="part-button"
@@ -131,12 +116,7 @@ function Embragues() {
           </div>
 
           <div className="part-info">
-            <h4 className="part-title">Embragues para máquinas viales</h4>
-
-            <span className="part-description">
-              Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel,
-              temporum sed mollitia!
-            </span>
+            <h4 className="part-title">Máquinas viales</h4>
 
             <a
               className="part-button"

@@ -79,7 +79,7 @@ function About() {
             </p>
 
             <p className="about-text">
-              Fundada por Raúl González después de una extensa
+              Fundada por Raúl Gonzalez después de una extensa
               trayectoria en el rubro, combina conocimiento
               técnico, responsabilidad y atención cercana
               para brindar seguridad y confianza en cada trabajo.
@@ -189,7 +189,7 @@ function About() {
       <p>
         Brindar soluciones integrales en embragues y transmisiones para maquinaria agrícola, maquinaria pesada, transporte, vehículos familiares y de competición, combinando experiencia, innovación y un profundo conocimiento técnico.
 
-Trabajamos con rapidez, eficiencia y compromiso para ofrecer productos y servicios confiables, desarrollando soluciones personalizadas que respondan a las necesidades reales de cada cliente y construyendo relaciones basadas en la confianza y el trato familiar.
+        Trabajamos con rapidez, eficiencia y compromiso para ofrecer productos y servicios confiables, desarrollando soluciones personalizadas que respondan a las necesidades reales de cada cliente y construyendo relaciones basadas en la confianza y el trato familiar.
       </p>
     </motion.article>
 
@@ -209,7 +209,7 @@ Trabajamos con rapidez, eficiencia y compromiso para ofrecer productos y servici
       <p>
         Ser la empresa referente en Argentina en soluciones de embragues y transmisiones, reconocida por la excelencia de nuestro trabajo, la capacidad de resolver desafíos técnicos complejos y la cercanía con nuestros clientes.
 
-Aspiramos a crecer manteniendo nuestros valores familiares, liderando la innovación en el sector y consolidándonos como el socio de confianza elegido por quienes buscan calidad, experiencia y resultados comprobados.
+        Aspiramos a crecer manteniendo nuestros valores familiares, liderando la innovación en el sector y consolidándonos como el socio de confianza elegido por quienes buscan calidad, experiencia y resultados comprobados.
       </p>
     </motion.article>
 

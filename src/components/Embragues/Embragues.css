@@ -37,6 +37,8 @@
 }
 
 .embrague-card {
+    display: flex;
+    flex-direction: column;
     width: 375px;
     margin: 20px;
     height: auto;
@@ -46,9 +48,21 @@
     transition: 0.5s;
 }
 
+.embrague-card .part-image-container {
+    flex-shrink: 0;
+}
+
+.embrague-card .part-info {
+    flex: 1;
+}
+
+.embrague-card .part-button {
+    margin-top: auto;
+}
+
 .part-card:hover {
     box-shadow: 0 0 6px #ffffff99;
-    transform: scaleX(1.01);
+    transform: scaleX(0.99);
 }
 
 .part-image-container {
@@ -76,6 +90,7 @@
 .part-title {
     font-size: 24px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .part-description {
@@ -94,7 +109,7 @@
     text-align: center;
 
     &:hover {
-        transform: scale(1.03);
+        transform: scale(0.99);
     }
 }
 

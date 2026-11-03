@@ -59,7 +59,7 @@
 
     &:hover {
         color: #F2531B;
-        transform: scale(1.03);
+        transform: scale(0.99);
         border-bottom: 2px solid #F2531B;
     }
 }
@@ -74,7 +74,7 @@
 
     &:hover {
         color: #F2531B;
-        transform: scale(1.03);
+        transform: scale(0.99);
         border-bottom: 2px solid #F2531B;
     }
 }

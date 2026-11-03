@@ -17,6 +17,8 @@ function Repuestos() {
       (anterior) => (anterior - 1 + totalProductos) % totalProductos,
     );
   };
+
+  
   return (
     <div id="repuestos" className="parts-container">
       <motion.div

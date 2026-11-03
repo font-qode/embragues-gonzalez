@@ -39,7 +39,7 @@
         color: #F2531B;
         cursor: pointer;
         border-right: 1px solid #F2531B;
-        transform: scaleX(1.01);
+        transform: scaleX(0.99);
     }
 }
 
@@ -61,7 +61,7 @@
     gap: 10px;
 
     &:hover {
-        transform: scale(1.03);
+        transform: scale(0.99);
     }
 }
 

@@ -87,7 +87,7 @@
     justify-content: center;
 
     &:hover {
-        transform: scale(0.95);
+        transform: scale(0.99);
     }
 }
 
@@ -124,7 +124,7 @@
 }
 
 .whatsapp-container:hover {
-    transform: scale(1.1);
+    transform: scale(0.99);
 }
 
 .end-arrow {

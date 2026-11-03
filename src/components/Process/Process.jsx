@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 function Process() {
   return (
-    <div id="comotrabajamos" className="parts-container">
+    <div id="comotrabajamos" className="process-container">
       <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
       <div className="subtitle-container">
         <h2 className="subtitles"> ¿Como trabajamos?</h2>

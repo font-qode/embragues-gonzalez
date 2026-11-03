@@ -84,7 +84,7 @@ function Contact() {
           <div className="contact-map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.074132692559!2d-58.024916924180886!3d-31.38451937427638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ade810c0965c79%3A0xfc4d6814c4ea23c5!2sEmbragues%20Gonzalez%20SRL!5e0!3m2!1ses!2sar!4v1791499291972!5m2!1ses!2sar"
-              title="Ubicación de Embragues González"
+              title="Ubicación de Embragues Gonzalez"
               width="100%"
               height="300"
               style={{ border: 0 }}
