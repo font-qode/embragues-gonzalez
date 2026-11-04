@@ -96,7 +96,7 @@ function About() {
             rel="noopener noreferrer"
             className="about-video-link"
           >
-            Continuar historia <span>↗</span>
+            Continuar historia
           </a>
         </motion.div>
       </div>
