@@ -28,7 +28,7 @@ function Hero() {
                     </motion.div>
                     <div className="Hero-button-container">
                     <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }} viewport={{ once: true }}>
-                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20solicitar%20un%20presupuesto." className="Hero-button"> SOLICITAR PRESUPUESTO </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5493456256499?text=Hola,%20quisiera%20solicitar%20un%20presupuesto." className="Hero-button"> Solicitar presupuesto </a>
                     </motion.div>
                     </div>
                 </div>

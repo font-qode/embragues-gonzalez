@@ -55,10 +55,8 @@ function Contact() {
             <div>
               <p className="contact-text"> Av. San Lorenzo 336 Oeste </p>
               <p className="contact-text"> Concordia, Entre Rios, Argentina </p>
-              <p className="contact-text"> Código postal: 3202 </p>
-            </div>
-            <div>
               <span className="span-line-contact">____</span>
+              <p className="contact-text"> Código postal: 3202 </p>
             </div>
           </div>
           </motion.div>
@@ -70,10 +68,10 @@ function Contact() {
             </div>
             <div>
               <p className="contact-text"> Lunes a viernes </p>
-              <p className="contact-text"> 7:30hs a 12hs - 15hs a 19hs </p>
-            </div>
-            <div>
+              <p className="contact-text-hour"> 7:30hs a 12hs - 15hs a 19hs </p>
               <span className="span-line-contact">____</span>
+              <p className="contact-text"> Sábados y domingos </p>
+              <p className="contact-text-hour"> Cerrado </p>
             </div>
           </div>
           </motion.div>

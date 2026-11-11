@@ -82,6 +82,14 @@
     gap: 50px;
 }
 
+.contact-text {
+    font-size: large;
+}
+
+.contact-text-hour {
+    color: #F2531B;
+}
+
 
 @media (max-width: 768px) {
     .contact-button {
@@ -103,7 +111,7 @@
     width: calc(100% - 20px);
     min-width: 300px;
     max-width: 100%;
-    min-height: 300px;
+    min-height: 250px;
     height: auto;
     margin: 10px;
     padding: 10px;
