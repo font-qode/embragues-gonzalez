@@ -31,7 +31,6 @@ function Services() {
                     </div>
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues para tractores y maquinaria agrícola </h4>
-                        <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -40,7 +39,6 @@ function Services() {
                     </div>
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues de competición </h4>
-                        <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -49,7 +47,6 @@ function Services() {
                     </div>
                     <div className='services-info'>
                         <h4 className='services-title'> Reparación de embragues automotrices </h4>
-                        <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -58,7 +55,6 @@ function Services() {
                     </div>
                     <div className='services-info'>
                         <h4 className='services-title'> Embragues para máquinas viales </h4>
-                        <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
                     </div>
                 </div>
                 <div className='services-card'>
@@ -67,7 +63,6 @@ function Services() {
                     </div>
                     <div className='services-info'>
                         <h4 className='services-title'> Sistemas y embragues en baño de aceite </h4>
-                        <span className='services-description'> Lorem ipsum dolor sit amet consectetur adipiconse asperiores vel, temporum sed mollitia!</span>
                     </div>
                 </div>
             </motion.div>
